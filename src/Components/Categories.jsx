@@ -7,7 +7,7 @@ const Categories = () => {
     const categories = use(CategoriesData);
 
     return (
-        <div className='p-4'>
+        <div className=''>
             <h2 className='font-bold'>All Categories</h2>
             <div className='grid grid-cols-1 mt-5 gap-3'>
                 {

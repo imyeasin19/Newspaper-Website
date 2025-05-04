@@ -25,8 +25,6 @@ const CategoryNews = () => {
     
     return (
         <div>
-            <h2>Found News - {news.length}</h2>
-            
             <div className='grid grid-cols-1 gap-4'>
                 {
                     news.map((en) => <NewsCard key={en.id} news ={en}></NewsCard>)

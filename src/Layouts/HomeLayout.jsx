@@ -14,14 +14,14 @@ const HomeLayout = () => {
                 <LatestNews></LatestNews>
                 <Navbar></Navbar>
             </header>
-            <main className='grid grid-cols-12 mt-20'>
-                <aside className='col-span-3'>
+            <main className='grid grid-cols-12 mt-20 gap-4'>
+                <aside className='col-span-3 p-4 sticky top-0 h-fit'>
                     <LeftAside></LeftAside>
                 </aside>
                 <section className='main col-span-6 p-4'>
                     <Outlet></Outlet>
                 </section>
-                <aside className='col-span-3'>
+                <aside className='col-span-3 p-4 sticky top-0 h-fit'>
                     <RightAside></RightAside>
                 </aside>
             </main>
