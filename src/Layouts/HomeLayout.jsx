@@ -14,7 +14,7 @@ const HomeLayout = () => {
                 <LatestNews></LatestNews>
                 <Navbar></Navbar>
             </header>
-            <main className='grid grid-cols-12 mt-20 *:border'>
+            <main className='grid grid-cols-12 mt-20'>
                 <aside className='col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>
