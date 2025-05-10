@@ -1,10 +1,11 @@
 import React, { use } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Register = () => {
 
     const {createUser, setUser} = use(AuthContext);
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -17,6 +18,7 @@ const Register = () => {
         .then(result =>{
             const user = result.user;
             setUser(user);
+            navigate('/');
         })
         .catch(error =>{
             console.log(error)
